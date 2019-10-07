@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT project-record (meta,work-team,abstract,deliverables) >
+
+<!ELEMENT meta (key-name,title,sub-title?,begin-date?,end-date?,supervisor) >
+<!ELEMENT key-name (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT sub-title (#PCDATA) >
+<!ELEMENT begin-date (#PCDATA) >
+<!ELEMENT end-date (#PCDATA) >
+<!ELEMENT supervisor (#PCDATA) >
+
+<!ELEMENT work-team (member)+ >
+<!ELEMENT member (#PCDATA) >
+
+<!ELEMENT abstract (paragraph)+ >
+<!ELEMENT paragraph (#PCDATA) >
+
+<!ELEMENT deliverables (deliverable)* >
+<!ELEMENT deliverable (#PCDATA) >
+
+<!ATTLIST paragraph
+    italic CDATA #IMPLIED
+    bold CDATA  #IMPLIED >
+    
+<!ATTLIST supervisor
+    link CDATA #REQUIRED >
+    
+<!ATTLIST member
+    email CDATA #REQUIRED >
+   
+<!ATTLIST deliverable
+    link CDATA #IMPLIED >

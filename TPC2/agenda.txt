@@ -1,0 +1,9 @@
+//entrada[contains( telefone , '253')]/*
+
+//entrada[not(contains( telefone , '253'))]/*
+
+//entrada[contains( nome , 'José') or contains( nome , 'Maria')]/*
+
+//grupo/entrada[@*]
+
+//entrada[not(@tipo = 'pessoa')]

@@ -1,0 +1,9 @@
+/ARQSITS/ARQELEM[contains( CONCEL , 'Amares')]/IDENTI
+
+distinct-values(//ARQELEM/CONCEL)
+
+/ARQSITS/ARQELEM[contains( CONCEL , 'Montalegre')]/DESCRI/*
+
+count(/ARQSITS/ARQELEM[contains( CONCEL , 'Amares')]/TIPO[@ASSUNTO="arqueossitio"])
+
+//ARQELEM[contains( IDENTI , 'Castro')]/*

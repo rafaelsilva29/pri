@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project-record SYSTEM "pr.dtd">
+<project-record>
+    <meta>
+        <key-name>PRI2019-A74264-T2</key-name>
+        <title>Create a project record</title>
+        <begin-date>30 de Setembro</begin-date>
+        <end-date>1 de Outubro</end-date>
+        <supervisor link="http://www4.di.uminho.pt/~jcr/"></supervisor>
+    </meta>
+    <work-team>
+        <member email="a74264@alunos.uminho.pt">Rafael Machado da Silva</member>
+    </work-team>
+    <abstract>
+        <paragraph>A XML file to work with the project record that was develop.</paragraph>
+    </abstract>
+    <deliverables>
+        <deliverable link="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">Example of a Project Record.</deliverable>
+    </deliverables>
+</project-record>
