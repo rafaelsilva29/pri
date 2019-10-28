@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI2019::A74264::TP4</keyname>
+        <title>Elaboração de um Servidor sobre o Arquivo de Músicas EVO</title>
+        <subtitle>Relatório do trabalho prático número quatro da Unidade Curricular de PRI de MIEI do ano Lectivo 2018/2019</subtitle>
+        <bdate>24/10/2019</bdate>
+        <edate>25/10/2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a74264</identifier>
+            <name>Rafael Machado da Silva</name>
+            <email>a74264@alunos.uminho.pt</email>
+            <photo path="images/rafa_photo.png"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Neste trabalho prático foi pedido para desenvoler um servidor baseado em <i>Node.js</i> para o tratamento do DataSet do 
+            Arquivo de Musicas Evo.
+        </p>
+        <p>
+            De seguida foi pedido pedido para desenvolver dois <i>StyleSheets</i>, o primeiro para separar o DataSet em <b>XML</b> individuais e o segundo foi 
+            para converter <b>XML</b> para <b>HTML</b>, para o servidor poder fazer a conversão individual de cada uma dos ficheiros.
+        </p>
+        <p>
+            Sendo assim o servidor é capaz de responder aos pedidos que lhe chegam, bem como no tratamento deles.
+        </p>
+        <p>
+            O servidor enconta-se em <b>localhost:1234</b> e o pedido é feito em <b>localhost:1234/musica/{id}</b> sendo que o id
+            é o número da música.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="pr.html">HTML para o Project Record</deliverable>
+        <deliverable path="serverArqEvo.js">Link para o código do servidor</deliverable>
+        <deliverable path="doc2html.xsl">XSL tranformar XML em HTML pelo servidor</deliverable>
+        <deliverable path="converter-arq-evo.xsl">XSL separar o DataSet para XML individual</deliverable>
+        <deliverable path="pr.xsl">XSL para o Project Record</deliverable>
+        <deliverable path="pr.xml">XML do Project Record</deliverable>
+    </deliverables>
+</pr>
