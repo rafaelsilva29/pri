@@ -1,0 +1,40 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Registo de um Aluno
+            .w3-container
+                form.w3-container(action='/alunos' method='POST')
+                    label
+                        b Identificador
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='identificador')
+                    label
+                        b Nome
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='nome')
+                    label
+                        b Curso
+                    input.w3-input.w3-border.w3-light-grey(type="text" name='curso')
+                    input.w3-btn.w3-blue-grey(type="submit" value="Adicionar" allign="center")
+        .w3-card-4        
+            header.w3-container.w3-teal
+                h3 Lista de Alunos
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Identificador
+                        th Nome
+                        th Curso
+                        th Operações
+                    each al in lista
+                        tr
+                            td= al.identificador
+                            td= al.nome
+                            td= al.curso
+                            td 
+                                button.w3-button.w3-circle.w3-blue-grey(onclick="verAluno('" + al.identificador + "')") Ver
+                                span 
+                                span
+                                button.w3-button.w3-circle.w3-blue-grey(onclick="apagarAluno('" + al.identificador + "')") Apagar
+            footer.w3-container.w3-teal 
+                address Gerado por Gestão de Alunos App

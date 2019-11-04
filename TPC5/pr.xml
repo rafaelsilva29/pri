@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI2019::A74264::TP5</keyname>
+        <title>Elaboração de um Servidor em Express sobre Gestão de Alunos</title>
+        <subtitle>Relatório do trabalho prático número cinco da Unidade Curricular de PRI de MIEI do ano Lectivo 2018/2019</subtitle>
+        <bdate>29/10/2019</bdate>
+        <edate>29/10/2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a74264</identifier>
+            <name>Rafael Machado da Silva</name>
+            <email>a74264@alunos.uminho.pt</email>
+            <photo path="images/rafa_photo.png"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Neste trabalho prático foi pedido para desenvoler um servidor baseado em <i>Node.js</i> e usando o <b>Express</b> sobre Gestão de Alumos.
+        </p>
+        <p>
+            O servidor tem de ser capaz de remover, visualizar e adicionar alunos, bem como remover e adicionar as notas ao respetivo aluno.
+        </p>
+        <p>
+            O mesmo usa como front-end a interface <b>pug</b> que nos permite uma fácil construção.
+            Também usa <b>Express</b> para ser mais fácil a criação do mesmo servidor.
+            O mesmo servidor enconta-se operacional e utiliza a porta <i>3029</i>.
+        </p>
+        <p>
+            
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="pr.html">HTML para o Project Record</deliverable>
+        <deliverable path="pr.xsl">XSL para o Project Record</deliverable>
+        <deliverable path="pr.xml">XML do Project Record</deliverable>
+        <deliverable path="gestAlunos/routes/alunos.js">Script do route do endpoint /alunos</deliverable>
+        <deliverable path="gestAlunos/routes/aluno.js">Script do route do endpoint /aluno</deliverable>
+        <deliverable path="gestAlunos/app.js">Ficherio app.js do projecto</deliverable>
+    </deliverables>
+</pr>
