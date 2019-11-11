@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4        
+            header.w3-container.w3-teal
+                h3 Lista de Filmes
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Título
+                        th Ano
+                        th Operações
+                    each filme in lista
+                        tr
+                            td= filme.title
+                            td= filme.year
+                            td 
+                                button.w3-button.w3-circle.w3-blue-grey(onclick="verFilme('" + filme._id + "')") Ver
+                                span 
+                                span
+                                button.w3-button.w3-circle.w3-blue-grey(onclick="apagarFilme('" + filme._id + "')") Apagar
+
+            footer.w3-container.w3-teal 
+                address Gerado por Gestão de Filmes App:
+                    a(href='/') Voltar à página principal
