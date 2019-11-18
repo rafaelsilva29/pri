@@ -1,0 +1,1 @@
+db.obras.aggregate([{$unwind: "$compositor"}, {$group: {_id: "$compositor", numObras: {"$sum": 1}, obras: {$push: {nome: "$nome", desc: "$desc", anoCriacao: "$anoCriacao", periodo: "$periodo", duracao: "$duracao"}}}}])

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4        
+            header.w3-container.w3-teal
+                h3 Lista de Compositores
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Nome
+                        th Número de Obras
+                        th Operações
+                    each compositor in lista
+                        tr
+                            td= compositor._id
+                            td= compositor.numObras
+                            td 
+                                button.w3-button.w3-circle.w3-blue-grey(onclick="verCompositor('" + compositor._id + "')") Ver
+                            
+            footer.w3-container.w3-black
+                address Gerado por Gestão de Obras App:
+                    a(href='/') Voltar à página principal
