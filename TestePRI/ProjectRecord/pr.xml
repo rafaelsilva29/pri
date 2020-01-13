@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI2019::A74264::TestePRI-2020</keyname>
+        <title>Teste de PRI de 2020</title>
+        <subtitle>Elaboração do Teste da Unidade Curricular de Processamento e Representação de Informação do ano lectivo de 2019/2020</subtitle>
+        <bdate>13/01/2020</bdate>
+        <edate>13/01/2020</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a74264</identifier>
+            <name>Rafael Machado da Silva</name>
+            <email>a74264@alunos.uminho.pt</email>
+            <photo path="images/rafa_photo.png"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            <b>Exercício Nº 1: Prémios Nobel</b>
+        </p>
+        <p>
+            - Neste exercicio é nos fornecido um dataset em formato JSON, o mesmo encontra-se com erros na sua formatação, 
+            tendo os corrigido no <b>Visual Studio Code</b> um a um, ou seja, manualmente, estes erros consistiem em ","(virgulas) mal colocadas, bem como 
+            <i>tabs</i> mal definidos e <i>enters</i> mal estruturados, tendo corrigido esses erros de sintaxe do <i>JSON</i>.
+            Para a persintência dos dados fiz uma unica modificação no dataset, substituindo o atributo <b>id</b> por <b>_id</b>
+        </p>
+        <p>
+            - Utilizei para este exercicio para guardar o dataset o mongo, utilizando o seguinte comando: <i>mongoimport --db jcrpubs --collection jcrpubs --file jcrpubs.json  --jsonArray</i>
+            Como expliquei em cima ao fazer aquela substituição fiz com o data set ao ser importado para o mongo tenha persistência.
+            Tendo obtido no final o total de <u>120</u> registos guardados.
+        </p>
+        <p>
+            - Neste caso utilzei o mongo pelas querys que irão ser feitas ao dataset, em que o mongo nos permite com facilidade a sua resolução.
+        </p>
+        <p>
+            - O servidor é capaz de responder as querys todas pedidas no enunciado
+        </p>
+        <p>
+            <b>Exercício Nº 2: CLAV: Classificação e Avaliação da Informação Pública</b>
+        </p>
+        <p>
+            - Neste exercicio é nos pedido para utilizar uma API de dados online e a respetiva construção de uma interface para o mesmo,
+            para a resolução deste exercicio optei por utilizar o <i>PUG</i> em junção com o <i>W3</i>
+        </p>
+        <p>
+           - As respostas paras as respectivas perguntas a alínea 1, irão dentro do projeto e será em baixo mostrado o link para aceder as mesmas.
+        </p>
+        <p>
+            - É uma interface simples, utilizando um indici inicial se pretende pesquisar por <b>entidades</b> ou <b>tipologias</b>, de seguida temos uma 
+            lista com a respetiva informção que foi escolhia anteriormente, e de seguida temos uma página detalhada se cada informação respetiva,
+            sendo possivel a visualização de entidades para tipologias e vice-versa.
+        </p>
+        <p>
+            
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="pr.html">HTML para o Project Record</deliverable>
+        <deliverable path="pr.xsl">XSL para o Project Record</deliverable>
+        <deliverable path="pr.xml">XML do Project Record</deliverable>
+        <deliverable path="../jcrPubs/">Servidor do Exercicio Nº1</deliverable>
+        <deliverable path="../clavInterface/">Servidor do Exercicio Nº2</deliverable>
+        <deliverable path="../clavInterface/info/respostas.txt">Respostas para a alinea 1 do Exercicio Nº2</deliverable>
+    </deliverables>
+</pr>

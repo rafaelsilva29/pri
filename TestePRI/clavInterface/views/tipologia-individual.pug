@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4        
+            header.w3-container.w3-teal
+                h3 Tipologia Individual
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Sigla
+                        th Designação
+                        th Estado
+                    tr
+                        td= tipologia.sigla
+                        td= tipologia.designacao
+                        td= tipologia.estado
+                header.w3-container.w3-teal
+                  h4 Entidades
+                table.w3-table-all
+                    tr
+                        th Sigla
+                        th Designacao
+                    each entidade in entidades
+                        tr
+                            td
+                                a(href="/entidades/"+entidade.id)= entidade.sigla
+                            td= entidade.designacao
+                    else
+                        td Tipologia sem entidades...
+                header.w3-container.w3-teal
+                  h4 Lista de processos da Tipologia
+                table.w3-table-all
+                    tr
+                        th Código
+                        th Titulo
+                    each dono in donos
+                        tr
+                            td= dono.codigo
+                            td= dono.titulo
+                    else
+                        td Tipologia não possui processos...
+
+            footer.w3-container.w3-teal 
+                address Gerado por CLAV: Classificação e Avaliação da Informação Pública
+                a(href='/tipologias') Voltar à página anterior

@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4        
+            header.w3-container.w3-teal
+                h3 Entidade Individual
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Sigla
+                        th Designação
+                        th Estado
+                        th Internacional
+                        th SIOE
+                        th Operação
+                    tr
+                        td= entidade.sigla
+                        td= entidade.designacao
+                        td= entidade.estado
+                        if entidade.sioe
+                            td= entidade.sioe
+                        else 
+                            td Não
+                        if entidade.internacional
+                            td= entidade.internacional
+                        else 
+                            td Não
+                header.w3-container.w3-teal
+                  h4 Tipologias
+                table.w3-table-all
+                    tr
+                        th Sigla
+                        th Designacao
+                    each tipologia in tipologias
+                        tr
+                            td
+                                a(href="/tipologias/"+tipologia.id)= tipologia.sigla
+                            td= tipologia.designacao
+                    else
+                        td Entidades sem tipologias...
+            footer.w3-container.w3-teal 
+                address Gerado por CLAV: Classificação e Avaliação da Informação Pública
+                a(href='/entidades') Voltar à página anterior

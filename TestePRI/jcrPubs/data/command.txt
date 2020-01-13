@@ -1,0 +1,1 @@
+mongoimport --db jcrpubs --collection jcrpubs --file jcrpubs.json  --jsonArray

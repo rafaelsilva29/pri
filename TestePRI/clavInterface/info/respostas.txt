@@ -1,0 +1,16 @@
+(1)
+Pergunta: Quantos Tipologias estão catalogadas?
+Resposta: 76
+
+Pergunta: Quantos Entidades pertencem à Tipologia tip_FSS
+Resposta: 5
+
+Pergunta: Em que processos a tipologia tip_FA participa como Comunicador?
+Resposta:   650.10.019 - Concessão de pensões de preço de sangue
+            650.10.020 - Concessão de pensões por serviços excecionais e relevantes prestados ao país
+            650.10.212 - Concessão de pensões de ex-prisioneiro de guerra
+            650.10.213 - Concessão de pensões por condecorações
+
+Pergunta: A que tipologias pertence a entidade ent_SEF?
+Resposta:  AP - Administração Pública
+           FSS - Forças e serviços de segurança

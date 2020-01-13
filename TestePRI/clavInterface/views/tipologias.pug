@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4        
+            header.w3-container.w3-teal
+                h3 Lista de Tipologias
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Sigla
+                        th Designação
+                        th Estado
+                    each tipologia in listaTipologias
+                        tr
+                            td
+                                a(href="/tipologias/"+tipologia.id)= tipologia.sigla
+                            td= tipologia.designacao
+                            td= tipologia.estado
+
+            footer.w3-container.w3-teal 
+                address Gerado por CLAV: Classificação e Avaliação da Informação Pública
+                a(href='/') Voltar à página principal
