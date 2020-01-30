@@ -1,0 +1,6 @@
+/informatics-social-network/sessions/*
+/informatics-social-network/node_modules/*
+.DS_Store
+.vscode/
+/informatics-social-network/public/grammar/.antlr
+/informatics-social-network/public/grammar/original_grammar/.antlr
