@@ -1,9 +1,9 @@
 # PRI
 
-Processamento e Representação de Informação - MIEINF
+## Processamento e Representação de Informação - MIEINF
 
 Unidade Curricular pertencente ao perfil de Processamento de Linguagens - [PLC]
 
-Mestrado Integrado em Engenharia Informática
+#### Mestrado Integrado em Engenharia Informática
 
-Universidade do Minho
+### Universidade do Minho
